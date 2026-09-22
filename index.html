@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Thais Coelho Nutri · Proposta Comercial</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * { -webkit-tap-highlight-color: transparent; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #faf9ff;
+      color: #1e1b3a;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, .playfair { font-family: 'Playfair Display', serif; }
+
+    .bg-roxo { background-color: #6b3fa0; }
+    .bg-azul { background-color: #3b6fc4; }
+    .bg-ciano { background-color: #2bb8c4; }
+    .text-roxo { color: #6b3fa0; }
+    .text-azul { color: #3b6fc4; }
+    .text-ciano { color: #2bb8c4; }
+    .border-roxo { border-color: #6b3fa0; }
+
+    .hover-lift { transition: transform 0.2s ease, box-shadow 0.25s ease; }
+    @media (hover: hover) {
+      .hover-lift:hover { transform: translateY(-3px); box-shadow: 0 14px 25px -10px rgba(107, 63, 160, 0.18); }
+    }
+    .card-shadow { box-shadow: 0 6px 18px -8px rgba(107, 63, 160, 0.12); }
+
+    .gradient-hero {
+      background: linear-gradient(160deg, #f5f0ff 0%, #eef4fc 55%, #e6f7fa 100%);
+    }
+    .gradient-cta {
+      background: linear-gradient(135deg, #4a2b7a 0%, #2a4f8f 55%, #1e8a94 100%);
+    }
+    .plano-destaque {
+      background: linear-gradient(150deg, #4a2b7a 0%, #2a4f8f 100%);
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #6b3fa0, #3b6fc4, #2bb8c4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 18px;
+      right: 16px;
+      z-index: 50;
+      background: linear-gradient(135deg, #6b3fa0, #2bb8c4);
+      color: white;
+      border-radius: 50px;
+      padding: 12px 18px;
+      font-size: 14px;
+      box-shadow: 0 8px 20px -4px rgba(107, 63, 160, 0.5);
+      transition: transform 0.2s ease;
+    }
+    .whatsapp-float:active { transform: scale(0.96); }
+
+    .desconto-badge { background: linear-gradient(135deg, #2bb8c4, #3b6fc4); }
+
+    /* Decorações sutis */
+    .star-deco {
+      position: absolute;
+      opacity: 0.06;
+      pointer-events: none;
+      font-size: 5rem;
+      line-height: 1;
+    }
+
+    /* Títulos responsivos sem quebra feia */
+    .title-fluid {
+      font-size: clamp(1.75rem, 6vw, 3.5rem);
+      line-height: 1.15;
+      word-break: keep-all;
+    }
+    .subtitle-fluid {
+      font-size: clamp(0.95rem, 2.8vw, 1.35rem);
+      line-height: 1.5;
+    }
+    .body-fluid {
+      font-size: clamp(0.85rem, 2.5vw, 1rem);
+      line-height: 1.65;
+    }
+
+    /* Reduz espaçamentos no mobile */
+    @media (max-width: 640px) {
+      .section-pad { padding-top: 3rem; padding-bottom: 3rem; }
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="https://wa.me/5589981202147?text=Ol%C3%A1%20Jo%C3%A3o!%20Aprovo%20a%20proposta%20para%20Thais%20Coelho%20Nutri.%20Vamos%20iniciar!" 
+     target="_blank" 
+     class="whatsapp-float flex items-center gap-2 font-semibold">
+    <i class="fab fa-whatsapp text-lg"></i>
+    <span class="hidden xs:inline sm:inline">Aprovar</span>
+  </a>
+
+  <!-- HERO -->
+  <header class="min-h-[100svh] flex items-center justify-center px-4 py-12 gradient-hero relative overflow-hidden">
+    <i class="fas fa-star star-deco text-roxo" style="top: 6%; left: 4%;"></i>
+    <i class="fas fa-star star-deco text-ciano" style="bottom: 8%; right: 4%; font-size: 4rem;"></i>
+    
+    <div class="max-w-3xl mx-auto text-center relative z-10 w-full">
+      <!-- Selo -->
+      <div class="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-white/80 backdrop-blur-sm border border-roxo/15 shadow-sm">
+        <div class="w-6 h-6 rounded-full bg-gradient-to-br from-roxo via-azul to-ciano flex items-center justify-center text-white text-[9px]">
+          <i class="fas fa-star"></i>
+        </div>
+        <span class="text-xs font-semibold tracking-wide gradient-text">EITA DEVIS · Proposta</span>
+      </div>
+      
+      <h1 class="title-fluid font-bold mb-3">
+        <span class="text-roxo">Thais Coelho</span> <span class="gradient-text">Nutri</span>
+      </h1>
+      
+      <p class="subtitle-fluid text-gray-600 font-light mb-2 playfair italic">
+        Acompanhamento Estratégico & Estrutura Digital
+      </p>
+      
+      <div class="w-16 h-0.5 bg-gradient-to-r from-roxo via-azul to-ciano mx-auto my-4 rounded-full opacity-70"></div>
+      
+      <p class="text-lg sm:text-xl md:text-2xl font-medium playfair mb-6 gradient-text">
+        “Mais estratégia. Mais organização. Mais resultados.”
+      </p>
+      
+      <!-- CARDS RESUMIDOS DE PREÇOS (PRIMEIRA DOBRA) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-xl mx-auto mb-6">
+        <!-- Plano 1 -->
+        <div class="bg-white/90 backdrop-blur-sm rounded-xl p-4 border border-roxo/10 card-shadow text-left hover-lift">
+          <div class="flex items-start justify-between mb-1.5">
+            <h3 class="text-sm sm:text-base font-bold text-roxo leading-tight pr-2">Acompanhamento Estratégico</h3>
+            <i class="fas fa-chart-line text-azul text-base shrink-0"></i>
+          </div>
+          <p class="text-2xl font-bold text-roxo mb-1">R$ 350<span class="text-xs font-normal text-gray-500">/mês</span></p>
+          <p class="text-[11px] sm:text-xs text-gray-500 mb-2 leading-snug">Reuniões mensais, metas, plano de ação e acompanhamento.</p>
+          <a href="#planos" class="text-azul text-xs font-semibold inline-flex items-center gap-1">
+            Ver detalhes <i class="fas fa-arrow-right text-[9px]"></i>
+          </a>
+        </div>
+        <!-- Plano 2 (destaque) -->
+        <div class="plano-destaque rounded-xl p-4 shadow-lg text-left relative hover-lift">
+          <span class="absolute -top-2.5 right-3 desconto-badge text-white text-[9px] font-bold px-2.5 py-0.5 rounded-full shadow">MAIS POPULAR</span>
+          <div class="flex items-start justify-between mb-1.5">
+            <h3 class="text-sm sm:text-base font-bold text-white leading-tight pr-2">Acompanhamento + Estrutura Digital</h3>
+            <i class="fas fa-laptop-code text-ciano text-base shrink-0"></i>
+          </div>
+          <p class="text-2xl font-bold text-white mb-1">R$ 500<span class="text-xs font-normal text-white/60">/mês</span></p>
+          <p class="text-[11px] sm:text-xs text-white/70 mb-2 leading-snug">Tudo do estratégico + páginas, identidade visual e automações.</p>
+          <a href="#planos" class="text-ciano text-xs font-semibold inline-flex items-center gap-1">
+            Ver detalhes <i class="fas fa-arrow-right text-[9px]"></i>
+          </a>
+        </div>
+      </div>
+      
+      <a href="#planos"  
+         class="inline-block bg-gradient-to-r from-roxo to-azul text-white font-semibold px-6 py-3 rounded-full shadow-md text-sm sm:text-base active:scale-95 transition-transform">
+       <span style="color: #1e8a94;">Ver Planos & Estrutura ↓</span> 
+      </a style="text-decoration: underline; color: #007bff;">
+      
+      <!-- Bônus -->
+      <div class="mt-5 inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm rounded-full px-4 py-2 border border-ciano/25 shadow-sm max-w-full">
+        <i class="fas fa-gift text-ciano text-sm shrink-0"></i>
+        <p class="text-[11px] sm:text-xs text-gray-700 leading-snug text-left">
+          <span class="font-semibold text-roxo">Bônus:</span> assinando qualquer plano, páginas avulsas por 
+          <span class="font-bold text-ciano">R$ 150</span> 
+          <span class="line-through text-gray-400 text-[10px] ml-1">R$ 350</span>
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- DESAFIO & SOLUÇÃO -->
+  <section class="section-pad py-16 px-4 bg-white relative overflow-hidden">
+    <i class="fas fa-star star-deco text-roxo" style="bottom: 4%; left: -3%; font-size: 4rem;"></i>
+    <div class="max-w-4xl mx-auto relative z-10">
+      <div class="text-center mb-8">
+        <span class="text-ciano font-semibold text-[11px] sm:text-xs tracking-wider uppercase">Feito para você, Thais</span>
+        <h2 class="title-fluid font-bold mt-1.5 playfair">
+          <span class="text-roxo">O Desafio</span> & <span class="gradient-text">A Solução</span>
+        </h2>
+        <div class="w-14 h-0.5 bg-gradient-to-r from-roxo to-ciano mx-auto mt-3 rounded-full opacity-60"></div>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-6 md:gap-10 items-start">
+        <div class="space-y-3 body-fluid text-gray-700">
+          <p>
+            <span class="font-semibold text-roxo">Olá, Thais!</span> Como conversamos, seu conhecimento em nutrição é valioso, 
+            mas para escalar e atrair os pacientes certos, precisamos de <span class="font-medium text-ciano">estrutura e estratégia digital</span>.
+          </p>
+          <p>
+            Meu papel é transformar ideias em ações concretas, dar clareza ao seu posicionamento, 
+            organizar seu tempo e criar uma presença digital profissional que trabalhe por você.
+          </p>
+          <p class="border-l-2 border-ciano pl-3 italic text-roxo bg-[#f8f5ff] py-2 rounded-r-lg text-sm">
+            "Mais estratégia. Mais organização. Mais resultados." — é o que vamos construir juntos.
+          </p>
+          <p class="font-semibold text-roxo text-sm">— João, Designer & Desenvolvedor</p>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-3">
+          <div class="bg-[#f8f5ff] p-3.5 rounded-xl card-shadow border border-roxo/5">
+            <i class="fas fa-lightbulb text-roxo text-lg mb-1.5"></i>
+            <h4 class="font-bold text-roxo text-xs sm:text-sm mb-0.5 leading-tight">Transformar ideias em ações</h4>
+            <p class="text-[10px] sm:text-xs text-gray-500 leading-snug">Tirar do papel e colocar em prática.</p>
+          </div>
+          <div class="bg-[#f0f7ff] p-3.5 rounded-xl card-shadow border border-azul/5">
+            <i class="fas fa-eye text-azul text-lg mb-1.5"></i>
+            <h4 class="font-bold text-azul text-xs sm:text-sm mb-0.5 leading-tight">Dar clareza</h4>
+            <p class="text-[10px] sm:text-xs text-gray-500 leading-snug">Posicionamento e comunicação assertiva.</p>
+          </div>
+          <div class="bg-[#f0fcff] p-3.5 rounded-xl card-shadow border border-ciano/5">
+            <i class="fas fa-clock text-ciano text-lg mb-1.5"></i>
+            <h4 class="font-bold text-ciano text-xs sm:text-sm mb-0.5 leading-tight">Organizar tempo</h4>
+            <p class="text-[10px] sm:text-xs text-gray-500 leading-snug">Rotina produtiva e ferramentas.</p>
+          </div>
+          <div class="bg-[#f8f5ff] p-3.5 rounded-xl card-shadow border border-roxo/5">
+            <i class="fas fa-globe text-roxo text-lg mb-1.5"></i>
+            <h4 class="font-bold text-roxo text-xs sm:text-sm mb-0.5 leading-tight">Presença digital</h4>
+            <p class="text-[10px] sm:text-xs text-gray-500 leading-snug">Site, identidade e automações.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANOS -->
+  <section id="planos" class="section-pad py-16 px-4 bg-gradient-to-b from-[#f5f0ff] to-[#eef6ff]">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="title-fluid font-bold playfair">
+          <span class="text-roxo">Planos</span> & <span class="gradient-text">Ofertas</span>
+        </h2>
+        <p class="body-fluid text-gray-600 mt-3 max-w-xl mx-auto">
+          Escolha o nível ideal para o seu momento. Contrato inicial de 3 meses com reavaliação.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <!-- Plano 1 -->
+        <div class="bg-white rounded-2xl p-5 sm:p-6 card-shadow border border-roxo/10 flex flex-col hover-lift">
+          <h3 class="text-lg sm:text-xl font-bold text-roxo playfair leading-tight">Acompanhamento Estratégico</h3>
+          <p class="text-gray-500 text-[11px] sm:text-xs mt-0.5 mb-3">Para quem precisa de direção e constância</p>
+          <div class="mb-4">
+            <span class="text-3xl sm:text-4xl font-bold text-roxo">R$ 350</span>
+            <span class="text-gray-500 text-xs">/mês</span>
+          </div>
+          <ul class="space-y-2 mb-4 flex-1 text-sm">
+            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-azul mt-0.5 text-xs"></i><span class="text-gray-700 text-xs sm:text-sm">2 reuniões mensais</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-azul mt-0.5 text-xs"></i><span class="text-gray-700 text-xs sm:text-sm">Definição de metas e plano de ação</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-azul mt-0.5 text-xs"></i><span class="text-gray-700 text-xs sm:text-sm">Checklist e roteiros personalizados</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-azul mt-0.5 text-xs"></i><span class="text-gray-700 text-xs sm:text-sm">Acompanhamento e ajustes contínuos</span></li>
+          </ul>
+          <div class="mb-3 p-2.5 rounded-lg bg-gradient-to-r from-[#f0f7ff] to-[#f0fcff] border border-ciano/20 text-center">
+            <p class="text-[10px] sm:text-[11px] text-gray-600 leading-snug">
+              <i class="fas fa-gift text-ciano mr-1"></i>
+              Assinando, páginas avulsas por <strong class="text-ciano">R$ 150</strong> <span class="line-through text-gray-400">R$ 350</span>
+            </p>
+          </div>
+          <a href="https://wa.me/5589981202147?text=Quero%20o%20plano%20Acompanhamento%20Estrat%C3%A9gico%20(R%24350)%20e%20quero%20o%20desconto%20nas%20p%C3%A1ginas%20avulsas!" 
+             target="_blank"
+             class="block text-center bg-roxo/10 text-roxo font-semibold py-2.5 px-4 rounded-full border border-roxo/30 hover:bg-roxo hover:text-white transition-all text-sm active:scale-95">
+            Quero este plano
+          </a>
+        </div>
+        
+        <!-- Plano 2 -->
+        <div class="plano-destaque rounded-2xl p-5 sm:p-6 shadow-xl flex flex-col relative hover-lift">
+          <div class="absolute -top-2.5 right-4 desconto-badge text-white text-[9px] font-bold px-3 py-0.5 rounded-full shadow">MAIS POPULAR</div>
+          <h3 class="text-lg sm:text-xl font-bold text-white playfair leading-tight">Acompanhamento + Estrutura Digital</h3>
+          <p class="text-white/60 text-[11px] sm:text-xs mt-0.5 mb-3">Solução completa para escalar</p>
+          <div class="mb-4">
+            <span class="text-3xl sm:text-4xl font-bold text-white">R$ 500</span>
+            <span class="text-white/60 text-xs">/mês</span>
+          </div>
+          <ul class="space-y-2 mb-4 flex-1 text-sm">
+            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-ciano mt-0.5 text-xs"></i><span class="text-white/90 text-xs sm:text-sm"><strong>Tudo do plano Estratégico</strong></span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-ciano mt-0.5 text-xs"></i><span class="text-white/90 text-xs sm:text-sm">Criação e manutenção de páginas</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-ciano mt-0.5 text-xs"></i><span class="text-white/90 text-xs sm:text-sm">Identidade visual profissional</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-ciano mt-0.5 text-xs"></i><span class="text-white/90 text-xs sm:text-sm">Automações e melhorias técnicas</span></li>
+          </ul>
+          <div class="mb-3 p-2.5 rounded-lg bg-white/10 border border-white/20 text-center">
+            <p class="text-[10px] sm:text-[11px] text-white/80 leading-snug">
+              <i class="fas fa-gift text-ciano mr-1"></i>
+              Assinando, páginas avulsas por <strong class="text-ciano">R$ 150</strong> <span class="line-through text-white/40">R$ 350</span>
+            </p>
+          </div>
+          <a href="https://wa.me/5589981202147?text=Quero%20o%20plano%20Acompanhamento%20%2B%20Estrutura%20Digital%20(R%24500)%20e%20quero%20o%20desconto%20nas%20p%C3%A1ginas%20avulsas!" 
+             target="_blank"
+             class="block text-center bg-white text-roxo font-bold py-2.5 px-4 rounded-full hover:bg-gradient-to-r hover:from-roxo hover:to-azul hover:text-white transition-all shadow text-sm active:scale-95">
+            Quero este plano
+          </a>
+        </div>
+      </div>
+      
+      <!-- Bônus -->
+      <div class="mt-6 max-w-xl mx-auto bg-white/90 backdrop-blur-sm rounded-xl p-4 border border-ciano/25 flex items-center justify-between gap-3 shadow-sm">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-ciano to-azul flex items-center justify-center text-white shrink-0">
+            <i class="fas fa-gift text-base"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm gradient-text">Bônus Especial</h4>
+            <p class="text-[11px] text-gray-600 leading-snug">Assine qualquer plano e contrate páginas avulsas por</p>
+            <p class="text-lg font-bold text-ciano leading-tight">R$ 150 <span class="text-xs font-normal text-gray-400 line-through ml-1">R$ 350</span></p>
+          </div>
+        </div>
+        <a href="https://wa.me/5589981202147?text=Quero%20assinar%20um%20plano%20e%20aproveitar%20o%20desconto%20nas%20p%C3%A1ginas%20avulsas%20por%20R%24150!" 
+           target="_blank"
+           class="bg-gradient-to-r from-roxo to-azul text-white font-semibold px-4 py-2 rounded-full text-xs hover:opacity-90 transition-all shadow shrink-0 active:scale-95 whitespace-nowrap">
+          Aproveitar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="section-pad py-16 px-4 bg-white relative overflow-hidden">
+    <i class="fas fa-star star-deco text-azul" style="top: 8%; right: -3%; font-size: 5rem;"></i>
+    <div class="max-w-4xl mx-auto relative z-10">
+      <div class="text-center mb-10">
+        <h2 class="title-fluid font-bold playfair">
+          <span class="text-roxo">Roadmap</span> dos <span class="gradient-text">3 Primeiros Meses</span>
+        </h2>
+        <p class="body-fluid text-gray-600 mt-3">Cada mês com foco claro para uma base sólida e escalável.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="bg-[#f8f5ff] rounded-xl p-5 card-shadow border border-roxo/10 relative">
+          <span class="text-5xl font-bold text-roxo/10 absolute top-3 right-4 playfair">01</span>
+          <div class="relative z-10">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-roxo to-azul flex items-center justify-center text-white mb-3">
+              <i class="fas fa-seedling text-base"></i>
+            </div>
+            <h3 class="text-base font-bold text-roxo mb-1">Estrutura e Fundação</h3>
+            <p class="text-gray-600 text-xs mb-2">Alinhamento, site/SEO, ferramentas.</p>
+            <ul class="text-[11px] space-y-0.5 text-gray-500">
+              <li>• Reunião de kickoff</li>
+              <li>• Análise de presença atual</li>
+              <li>• Configuração de site e SEO</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-[#f0f7ff] rounded-xl p-5 card-shadow border border-azul/10 relative">
+          <span class="text-5xl font-bold text-azul/10 absolute top-3 right-4 playfair">02</span>
+          <div class="relative z-10">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-azul to-ciano flex items-center justify-center text-white mb-3">
+              <i class="fas fa-play-circle text-base"></i>
+            </div>
+            <h3 class="text-base font-bold text-azul mb-1">Execução e Testes</h3>
+            <p class="text-gray-600 text-xs mb-2">Campanhas, automações, formulários.</p>
+            <ul class="text-[11px] space-y-0.5 text-gray-500">
+              <li>• Criação de landing pages</li>
+              <li>• Automação de e-mails</li>
+              <li>• Testes A/B e ajustes</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-[#f0fcff] rounded-xl p-5 card-shadow border border-ciano/10 relative">
+          <span class="text-5xl font-bold text-ciano/10 absolute top-3 right-4 playfair">03</span>
+          <div class="relative z-10">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-ciano to-azul flex items-center justify-center text-white mb-3">
+              <i class="fas fa-chart-bar text-base"></i>
+            </div>
+            <h3 class="text-base font-bold text-ciano mb-1">Escala e Otimização</h3>
+            <p class="text-gray-600 text-xs mb-2">Divulgação, métricas e melhorias.</p>
+            <ul class="text-[11px] space-y-0.5 text-gray-500">
+              <li>• Análise de métricas</li>
+              <li>• Otimização de conversão</li>
+              <li>• Planejamento de escala</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section-pad py-16 px-4 bg-gradient-to-b from-[#eef6ff] to-[#f5f0ff]">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="title-fluid font-bold playfair text-center mb-10">
+        <span class="text-roxo">Como Funciona</span> <span class="gradient-text">na Prática</span>
+      </h2>
+      
+      <div class="flex flex-wrap justify-center items-center gap-3 sm:gap-4">
+        <div class="flex flex-col items-center text-center w-20 sm:w-24">
+          <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center card-shadow mb-2 border border-roxo/15">
+            <i class="fas fa-handshake text-roxo text-base"></i>
+          </div>
+          <h4 class="font-semibold text-roxo text-[10px] sm:text-xs leading-tight">Reunião de Alinhamento</h4>
+        </div>
+        <i class="fas fa-arrow-right text-roxo/30 text-sm sm:text-base"></i>
+        <div class="flex flex-col items-center text-center w-20 sm:w-24">
+          <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center card-shadow mb-2 border border-azul/15">
+            <i class="fas fa-clipboard-list text-azul text-base"></i>
+          </div>
+          <h4 class="font-semibold text-azul text-[10px] sm:text-xs leading-tight">Planejamento</h4>
+        </div>
+        <i class="fas fa-arrow-right text-azul/30 text-sm sm:text-base"></i>
+        <div class="flex flex-col items-center text-center w-20 sm:w-24">
+          <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center card-shadow mb-2 border border-ciano/15">
+            <i class="fas fa-pen-fancy text-ciano text-base"></i>
+          </div>
+          <h4 class="font-semibold text-ciano text-[10px] sm:text-xs leading-tight">Produção</h4>
+        </div>
+        <i class="fas fa-arrow-right text-ciano/30 text-sm sm:text-base"></i>
+        <div class="flex flex-col items-center text-center w-20 sm:w-24">
+          <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center card-shadow mb-2 border border-azul/15">
+            <i class="fas fa-check-double text-azul text-base"></i>
+          </div>
+          <h4 class="font-semibold text-azul text-[10px] sm:text-xs leading-tight">Revisão & Aprovação</h4>
+        </div>
+        <i class="fas fa-arrow-right text-azul/30 text-sm sm:text-base"></i>
+        <div class="flex flex-col items-center text-center w-20 sm:w-24">
+          <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center card-shadow mb-2 border border-roxo/15">
+            <i class="fas fa-rocket text-roxo text-base"></i>
+          </div>
+          <h4 class="font-semibold text-roxo text-[10px] sm:text-xs leading-tight">Publicação</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSPARÊNCIA -->
+  <section class="section-pad py-16 px-4 bg-white">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="title-fluid font-bold playfair">
+          <span class="text-roxo">Transparência</span> & <span class="gradient-text">Condições</span>
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="bg-[#f8f5ff] p-5 rounded-xl border border-roxo/10 card-shadow text-center">
+          <i class="fas fa-file-signature text-roxo text-2xl mb-3"></i>
+          <h4 class="font-bold text-roxo text-sm mb-1">Contrato inicial de 3 meses</h4>
+          <p class="text-xs text-gray-600 leading-snug">Com reavaliação conjunta ao final do período.</p>
+        </div>
+        <div class="bg-[#f0f7ff] p-5 rounded-xl border border-azul/10 card-shadow text-center">
+          <i class="fas fa-clock text-azul text-2xl mb-3"></i>
+          <h4 class="font-bold text-azul text-sm mb-1">Prazos rápidos</h4>
+          <p class="text-xs text-gray-600 leading-snug">Entregas de páginas entre 3 e 10 dias úteis.</p>
+        </div>
+        <div class="bg-[#f0fcff] p-5 rounded-xl border border-ciano/10 card-shadow text-center">
+          <i class="fas fa-sync-alt text-ciano text-2xl mb-3"></i>
+          <h4 class="font-bold text-ciano text-sm mb-1">Até 2 rodadas de ajustes</h4>
+          <p class="text-xs text-gray-600 leading-snug">Por demanda, para garantir sua satisfação.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="py-16 px-4 gradient-cta text-white relative overflow-hidden">
+    <i class="fas fa-star star-deco text-white" style="top: 6%; left: 5%; opacity: 0.08; font-size: 4rem;"></i>
+    <i class="fas fa-star star-deco text-white" style="bottom: 6%; right: 5%; opacity: 0.08; font-size: 4rem;"></i>
+    <div class="max-w-2xl mx-auto text-center relative z-10">
+      <i class="fas fa-quote-right text-2xl text-ciano/70 mb-4"></i>
+      <p class="text-lg sm:text-xl md:text-2xl font-medium playfair italic leading-relaxed mb-6">
+        “O sucesso não vem de um grande passo, mas de muitos pequenos passos bem direcionados.”
+      </p>
+      
+      <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 sm:p-7 border border-white/10">
+        <h3 class="text-xl font-bold playfair mb-2">Vamos iniciar essa parceria?</h3>
+        <p class="text-white/70 text-xs sm:text-sm mb-5 max-w-md mx-auto">Clique abaixo para aprovar a proposta e começarmos pelo WhatsApp.</p>
+        
+        <a href="https://wa.me/5589981202147?text=Ol%C3%A1%20Jo%C3%A3o!%20Aprovo%20a%20proposta%20para%20Thais%20Coelho%20Nutri.%20Vamos%20iniciar%20a%20parceria!" 
+           target="_blank"
+           class="inline-flex items-center gap-2 bg-gradient-to-r from-ciano to-azul text-white font-bold px-6 py-3.5 rounded-full shadow-xl hover:opacity-90 transition-all text-sm sm:text-base active:scale-95">
+          <i class="fab fa-whatsapp text-xl"></i>
+          Aprovar Proposta e Iniciar Parceria
+        </a>
+        
+        <p class="text-white/40 text-[10px] sm:text-xs mt-4">Resposta em até 24h · João Designer/Desenvolvedor</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="py-6 text-center text-xs text-gray-500 bg-[#faf9ff] border-t border-roxo/10">
+    <div class="flex items-center justify-center gap-1.5 mb-1.5">
+      <div class="w-5 h-5 rounded-full bg-gradient-to-br from-roxo via-azul to-ciano flex items-center justify-center text-white text-[7px]">
+        <i class="fas fa-star"></i>
+      </div>
+      <span class="font-semibold text-[11px] gradient-text">EITA DEVIS</span>
+    </div>
+    <p class="text-[11px]">Thais Coelho Nutri · Proposta Comercial</p>
+    <p class="text-[10px] mt-0.5">© 2026 · Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === "#" || href === "") return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
